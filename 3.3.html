@@ -1,0 +1,40 @@
+﻿<script>
+    const num1 = parseFloat(prompt("Введите первое число:"));
+    const num2 = parseFloat(prompt("Введите второе число:"));
+    const num3 = parseFloat(prompt("Введите третье число:"));
+
+    //if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+    //    function findMin() {
+    //        const min = Math.min(num1, num2, num3);
+    //        return (`Минимум: ${min}`);
+    //    }
+
+    //    function findMax() {
+    //        const max = Math.max(num1, num2, num3);
+    //        return (`Максимум: ${max}`);
+    //    } else {
+    //        return("Пожалуйста, введите числовые значения для всех чисел.");
+    //    }
+    //}
+
+    function findMin() { 
+        if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+            const min = Math.min(num1, num2, num3);
+            return (min);
+        } else {
+            return ("Пожалуйста, введите числовые значения для всех чисел.");
+        }
+    }
+
+    function findMax() {
+        if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+            const max = Math.max(num1, num2, num3);
+            return (max);
+        } else {
+            return ("Пожалуйста, введите числовые значения для всех чисел.");
+        }
+    }
+
+    alert(findMin(num1, num2, num3))
+    alert(findMax(num1, num2, num3))
+</script>

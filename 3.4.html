@@ -1,0 +1,18 @@
+﻿<script>
+    const checkUserAge = function (name, age) {
+        if (!isNaN(age)) {
+            if (age < 18) {
+                return(`${name}, вы еще очень молоды!`);
+            } else if (age >= 18 && age <= 50) {
+                return(`${name}, добро пожаловать в личный кабинет!`);
+            } else if (age > 50) {
+                return(`${name}, моё почтение!`);
+            } else {
+                return("Укажите корректные данные!");
+            }
+        };
+    }
+    const a = prompt("Введите ваше имя:");
+    const b = parseInt(prompt("Введите ваш возраст:"));
+    console.log(checkUserAge(a, b))
+</script>
